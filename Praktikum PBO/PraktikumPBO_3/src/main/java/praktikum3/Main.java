@@ -10,8 +10,8 @@ package praktikum3;
  */
 public class Main {
     public static void main(String[] args) {
-        Mobil mobil1 = new Mobil("Toyota", "Avanza", 2020, "Hitam");
-        Mobil mobil2 = new Mobil("Honda", "Civic", 2018, "Putih");
+        Mobil mobil1 = new Mobil("Honda", "Brio Satya 1.2 E", 2018, "Putih");
+        Mobil mobil2 = new Mobil("Toyota", "Supra MK4 2JZ-GTE Turbo", 1998, "Hitam");
         
         System.out.println("Mobil 1");
         mobil1.displayInfo();
@@ -20,9 +20,5 @@ public class Main {
         System.out.println("\nMobil 2");
         mobil2.displayInfo();
         mobil2.startEngine();
-
-        mobil1.setWarna("Merah");
-        System.out.println("\nWarna setelah diubah:");
-        mobil1.displayInfo();
     }
 }

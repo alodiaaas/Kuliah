@@ -12,7 +12,7 @@ public class Mobil {
     private String merk;
     private String model;
     private int tahun;
-    private String warna; 
+    private String warna;
 
     public Mobil(String merk, String model, int tahun, String warna) {
         this.merk = merk;
@@ -20,14 +20,7 @@ public class Mobil {
         this.tahun = tahun;
         this.warna = warna;
     }
-
-    public void displayInfo() {
-        System.out.println("Merk: " + this.merk);
-        System.out.println("Model: " + this.model);
-        System.out.println("Tahun: " + this.tahun);
-        System.out.println("Warna: " + this.warna); 
-    }
-
+    
     public String getMerk() {
         return merk;
     }
@@ -51,7 +44,7 @@ public class Mobil {
     public void setTahun(int tahun) {
         this.tahun = tahun;
     }
-
+    
     public String getWarna() {
         return warna;
     }
@@ -59,9 +52,15 @@ public class Mobil {
     public void setWarna(String warna) {
         this.warna = warna;
     }
-
+    
+    public void displayInfo() {
+        System.out.println("Merk: " + getMerk());
+        System.out.println("Model: " + getModel());
+        System.out.println("Tahun: " + getTahun()); 
+        System.out.println("Warna: " + getWarna()); 
+    }
+    
     public void startEngine() {
-        System.out.println("Mesin mobil " + this.merk + " menyala");
+        System.out.println("Mesin mobil " + getMerk() + " menyala");
     }
 }
-
